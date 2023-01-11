@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.parallax{
+    
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .scroll-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    perspective: 1px;
+    transform-style: preserve-3d
+  }
+  .scroll-wrapper2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -10px;
+    margin:0;
+    padding:0;
+    transform: translateZ(-1px)  scale(2);
+  } */
+
+html{
+    font-size: 100%;
+}
+
+.container-fluid{
+    padding: 0;
+    text-align: left;
+}
+
+#home{
+    position: relative;
+    /* padding-bottom: 5vw; */
+    z-index: 100;
+    background-color: black;
+}
+
+#bg-img{
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    text-align: left;
+}
+
+.navbar{
+    /* display: inline-block; */
+    width: 100%;
+    /* padding-right: 100px; */
+    padding: 1vw 3vw;
+    transition: 0.5s;
+}
+
+.navbar:hover{
+    background-color: rgba(53, 54, 54, 0.575);
+    color: white;
+    /* opacity: 0.5; */
+}
+
+.navbar-brand{   
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    color: rgb(39, 38, 38);
+    /* color: rgb(212, 212, 212); */
+    font-size: 2.5vw;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Amita', cursive;
+    font-family: 'Monoton', cursive;
+    transition: 0.4s;
+    /* text-decoration: none; */
+}
+
+/* .navbar-brand:hover{
+    color: rgb(179, 73, 73);
+    text-decoration: underline;
+} */
+
+  .navbar-brand:hover{
+    color: rgb(163, 66, 66);
+  }
+  
+  .navbar-brand:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.2vw;
+    bottom: 10px;
+    left: 0;
+    background-color: #9f4343;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navbar-brand:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+li.nav-item{
+    font-size: 1vw;
+    padding: 0 2vw;
+    color: white;
+}
+
+a.nav-link{
+    display: inline-block;
+    position: relative;
+    color: rgb(53, 54, 54);
+    transition: 0.3s;
+}
+
+a.nav-link:hover{
+    color: white;
+
+}
+
+a.nav-link:after{
+    
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.2vw;
+    bottom: 10px;
+    left: 0;
+    background-color: rgb(53, 54, 54);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a.nav-link:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* .left-container{
+    position: relative;
+    text-align: left;
+    margin-top: 7vw;
+    margin-left: 1vw;
+    display: inline;
+}
+
+.right-container{
+    position: relative;
+    text-align: right;
+    right: 0;
+} */
+
+.content{
+    /* width: 100%; */
+    display: inline-block;
+    position: relative;
+    /* text-align: left; */
+    /* margin-top: 25vh; */
+    margin-left: 1.5vw;
+    margin-top: 5.5vw;
+    /* line-height: 3vw; */
+}
+#heading{
+    /* font-weight: 900; */
+    position: relative;
+    overflow-y: hidden;
+    font-size: 6.5vw;
+    font-family: 'Abril Fatface', cursive;
+    line-height: 7vw;
+    color: rgb(46, 46, 46);
+    /* color: whitesmoke; */
+    word-spacing: 1.3vw;
+    line-height: 7vw;
+    padding: 3vw 0 0 2vw;
+    /* mix-blend-mode:color-dodge ; */
+    /* fill: black; */
+    /* text-shadow: 1px 1px 3px rgb(76, 76, 76); */
+}
+
+#do{
+    color: rgb(212, 194, 164);
+    color: rgb(148, 63, 63);
+    /* color: rgb(188, 150, 92); */
+    /* margin-bottom: 50px; */
+    font-family: 'Amita', cursive;
+    /* font-weight: bold; */
+    font-family: 'Playfair Display', serif;
+    font-weight:400;
+    word-spacing: 1.3vw;
+    /* font-family: 'MuseoModerno', cursive; */
+    /* font-family: 'Zilla Slab Highlight', cursive; */
+}
+
+.sub-head{
+    font-size: 1.7vw;
+    padding: 2.2vw 0 0vw 4vw;
+    letter-spacing: 0.15vw;
+    color: rgb(163, 77, 77);
+    font-weight: bold;
+    /* color: rgb(0, 0, 0); */
+}
+
+#title-para{
+    position: relative;
+    width: 38vw;
+    text-align: left;
+    font-size: 0.9vw;
+    word-spacing: 0.1vw;
+    /* font-weight: 500; */
+    line-height: 1.4vw;
+    /* font-weight: bold;
+    color: rgb(71, 71, 71); */
+    /* color: azure; */
+    /* background-color: rgba(144, 144, 144, 0.475); */
+    padding: 2.3vw 0.3vw 0 2vw;
+    margin-top: 2vw;
+    border-radius: 2px;
+    /* display: table-cell; */
+    /* overflow: hidden; */
+    /* left: auto; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end; */
+}
+
+.home-page-btn{
+    position: relative;
+    z-index: 30;
+    overflow: hidden;
+    width: 12vw;
+    font-size: 1vw;
+    font-weight: 500;
+    border-width: 1px;
+    border-color: #9f4343;
+    color: #9f4343;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    /* margin-top: 2vw; */
+    margin-left: 2vw;
+    transition: color 0.3s ease-in-out;
+    /* height: 2.5vw; */
+    /* margin: 4vw 0; */
+}
+
+.home-page-btn:hover{
+    background-color: #9f4343;
+    color: white;
+    border: 1px solid #9f4343;
+}
+
+@media (max-width: 780px){
+    .navbar{
+        /* display: none; */
+        text-align: center;
+        padding-left: 50%;
+    }
+
+    a.nav-link{
+        display: none;
+    }
+
+    #bg-img{
+        height: 100%;
+    }
+
+    .home-page-btn{
+        display: none;
+    }
+}
+
+@media (max-width: 680px){
+        /* margin-top: 100px; */
+        #right-col{
+            /* color: blue; */
+            position: relative;
+            /* margin-top: -7vw; */
+            /* transform: translateY(50vw); */
+        }
+
+        #product-paras p{
+            display: none;
+            /* margin-top: -16vw; */
+            /* transform: translateY(-40%); */
+        }
+
+        #product-paras h5{
+            font-size: 2vw;
+        }
+
+        #product-img{
+            position: relative;
+            margin-bottom: 5vw;
+        }
+
+        #paras-3 p{
+            display: none;
+            margin-top: -16vw;
+            /* transform: translateY(-40%); */
+        }
+
+        #paras-3 h5{
+            font-size: 2vw;
+        }
+
+}
+
+@media (max-width: 1420px){
+    .content{
+        transform: translateY(-5%);
+        /* margin-bottom: 7vw; */
+    }
+}
+
+
+/* ------------------------ */
+
+#products{
+    position: relative;
+    z-index: 70;
+    background-color: rgb(43, 43, 43);
+    /* margin-top: 5vw; */
+    padding: 11vw 5vw 4vw 5vw;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+#right-col{
+    position: relative;
+    text-align: left;
+    padding: 0 0 0 6vw;
+    transform: translateY(50%);
+}
+
+#product-img{
+    position: relative;
+    width: 90%;
+    transform: translateY(12%);
+}
+
+.product-heading{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4.5vw;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.1vw;
+}
+
+.product-subhead{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.7vw;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.1vw;
+}
+
+.here, .impact, .last-word{
+    color: #9f4343;
+}
+
+#product-paras:not(.para-heading){
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    padding: 3vw 0 0 6vw;
+    font-size: 0.8vw;
+    color: rgb(215, 215, 215);
+    transform: translateY(30%);
+}
+
+.para-heading{
+    /* font-weight: bold; */
+    padding: 1.5vw 0 0 0;
+    color: white;
+}
+
+.products-btn{
+    background-color: #9f4343;
+    border: none;
+    color: white;
+    width: 10vw;
+    margin-top: 2vw;
+    font-size: 1vw;
+    /* text-align: left; */
+    /* height: 2.5vw; */
+}
+
+/* -------------------------- */
+
+#page-3{
+    background-color: #9f4343;
+    color: white;
+    padding: 1vw;
+}
+
+.content-3{
+    /* text-align: center; */
+    padding: 8vw 5.6vw 0vw;
+
+}
+
+#img-3{
+    width: 93%;
+    margin-left: 0.7vw;
+    position: relative;
+    transform: translateY(18%);
+}
+
+
+.heading-3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4.5vw;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.1vw;
+}
+
+.now{
+    color: rgb(43, 43, 43);
+}
+
+.subhead-3{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.7vw;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.1vw;
+}
+
+#right-col-3, .paras-3{
+    text-align: left;
+    padding-left: 6vw;
+}
+
+#right-col-3{
+    position: relative;
+    transform: translateY(75%);
+}
+
+#paras-3{
+    position: relative;
+    transform: translateY(37%);
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    padding: 3vw 0 0 6vw;
+    font-size: 0.8vw;
+    color: rgb(215, 215, 215);
+}
+
+.para-heading-3{
+    /* font-weight: bold; */
+    padding: 1.5vw 0 0 0;
+    color: white;
+}
+
+.last-word-3, .place-3{
+    color: rgb(43, 43, 43);
+}
+
+.products-btn-3{
+    background-color: rgb(43, 43, 43);
+    border: none;
+    color: white;
+    width: 10vw;
+    font-size: 1vw;
+    margin-top: 2vw;
+}
+
+.products-btn-3:hover{
+    background-color: #894747;
+}
+
+#footer{
+    /* background-color: aqua; */
+    padding: 7%;
+    text-align: center;
+}

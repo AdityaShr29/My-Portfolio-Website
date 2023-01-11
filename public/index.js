@@ -1,0 +1,1 @@
+$(".product-img").on("click", function(){  $("body").slideUp().slideDown().animate({transform: translateY("100px"), opacity: "-=20%", fontSize: "+=2rem"});  });
